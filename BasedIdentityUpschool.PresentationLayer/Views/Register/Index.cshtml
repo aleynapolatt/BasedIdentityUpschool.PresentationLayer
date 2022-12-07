@@ -1,0 +1,41 @@
+﻿@model AppUserRegisterViewModel
+@{
+    Layout = null;
+}
+
+<br />
+<div class=" container">
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    
+    <form method="post">
+        <h2>NEW MEMBER REGISTRATION</h2>
+        <br />
+        <label>Member Name</label>
+        <input type="text" asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+        <br />
+        <label>Member Surname</label>
+        <input type="text" asp-for="Surname" class="form-control" />
+        <span asp-validation-for="Surname" class="text-danger"></span>
+        <br />
+        <label>Member Email</label>
+        <input type="text" asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+        <br />
+        <label>Password:</label>
+        <input type="password" asp-for="Password" class="form-control" />
+        <br />
+        <label>Password Again:</label>
+        <input type="password" asp-for="ConfirmPassword" class="form-control" />
+        <br />
+        <div asp-validation-summary="ModelOnly" class="text-success"></div>
+        <button class="btn btn-outline-primary">Save</button>
+    </form>
+
+
+
+
+
+
+
+</div>"
